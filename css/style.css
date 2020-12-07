@@ -173,6 +173,15 @@ a {
     align-items: flex-end;
 }
 
+.member--johnny {
+    background-image: url(../img/user-profile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    position: relative;
+    overflow: hidden;
+}
+
 .member {
     background-image: url(../img/user-profile.svg);
     background-position: center;
@@ -186,6 +195,25 @@ a {
     background-image: url(../img/jared.svg);
 }
 
+.member--william {
+    background-image: url(../img/william.svg);
+}
+
+.member--johnny {
+    background-image: url(../img/johnny.png);
+}
+
+.member--johnny:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(237, 242, 244, 0.5), rgba(11, 69, 14, 0.95));
+    transition: transform 0.4s ease;
+}
+
 .member:before {
     content: "";
     position: absolute;
@@ -197,8 +225,18 @@ a {
     transition: transform 0.4s ease;
 }
 
+.member--johnny:hover:before {
+    transform: translateX(-100%)
+}
+
+
 .member:hover:before {
     transform: translateX(-100%)
+}
+
+.member--johnny span {
+    position: relative;
+    z-index: 2;
 }
 
 .member span {
